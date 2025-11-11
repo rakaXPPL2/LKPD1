@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Tugas LKPD2!</title>
+</head>
+<!-- 
+Refleksi:
+Perbedaan antara if dan else if:
+- if digunakan untuk mengecek kondisi pertama. Jika kondisi tersebut benar (true), maka blok kode di dalamnya akan dijalankan.
+- else if digunakan untuk mengecek kondisi lain jika kondisi if sebelumnya salah (false).
+- jika semua kondisi salah dan tidak ada else, maka tidak ada kode yang dijalankan sama sekali.
+
+Contoh:
+if (nilai >= 90) → jika benar, tampil "A"
+else if (nilai >= 80) → dijalankan jika kondisi pertama salah
+else → dijalankan jika semua kondisi salah
+
+Kesimpulan:
+if digunakan untuk kondisi pertama,
+else if untuk alternatif lain,
+dan else untuk kondisi terakhir jika semua salah.
+-->
+<body>
+  <script>
+    // LKPD 2
+    let Nilai = parseInt(prompt("Masukkan Nilai Anda"));
+    if (Nilai < 70) {
+      alert("BELUM LULUS");
+    } else {
+      alert("LULUS");
+    }
+
+    
+    let umur = parseInt(prompt("Masukkan umur kamu"));
+    if (umur < 13) {
+      alert("Anak-Anak");
+    } else if (umur <= 17) {
+      alert("Remaja");
+    } else {
+      alert("Dewasa");
+    }
+  </script>
+</body>
+</html>

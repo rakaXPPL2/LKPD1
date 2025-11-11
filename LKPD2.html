@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas LKPD – Program Kelulusan dan Usia</title>
+</head>
+
+<!-- 
+ Refleksi:
+Perbedaan antara if dan else if:
+- if digunakan untuk mengecek kondisi pertama. Jika kondisi itu benar (true), maka perintah di dalamnya dijalankan.
+- else if digunakan untuk mengecek kondisi lain jika kondisi if sebelumnya salah (false).
+- else digunakan sebagai kondisi terakhir jika semua kondisi sebelumnya salah.
+
+Apa yang terjadi bila semua kondisi salah?
+→ Jika tidak ada blok else, maka program tidak akan menampilkan apa pun (tidak ada aksi yang dijalankan).
+Kesimpulan:
+- if digunakan untuk kondisi utama.
+- else if digunakan untuk kondisi alternatif.
+- else digunakan jika semua kondisi salah.
+-->
+
+<body>
+  <h2>Program Cek Nilai dan Usia</h2>
+
+  <script>
+    // nilai
+    let nilai = parseInt(prompt("Masukkan nilai kamu:"));
+    if (nilai >= 70) {
+      alert("LULUS");
+    } else {
+      alert("BELUM LULUS");
+    }
+
+    //umur
+    let umur = parseInt(prompt("Masukkan usia kamu:"));
+    if (umur < 13) {
+      alert("Anak-anak");
+    } else if (umur <= 17) {
+      alert("Remaja");
+    } else {
+      alert("Dewasa");
+    }
+  </script>
+</body>
+</html>

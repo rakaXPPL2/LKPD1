@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas LKPD3</title>
+</head>
+
+<!-- 
+Refleksi:
+ Kapan lebih cocok menggunakan for daripada while?
+   → Perulangan for lebih cocok digunakan ketika kita sudah mengetahui dengan pasti 
+     berapa kali perulangan akan dilakukan. 
+     Misalnya, menjumlahkan angka 1 sampai 10, atau menampilkan bilangan genap dari 2 sampai 20.
+
+   Sedangkan while lebih cocok digunakan ketika jumlah perulangannya belum diketahui,
+   seperti menunggu pengguna memasukkan input yang benar.
+
+ Apa manfaat perulangan dibanding menulis perintah berulang kali?
+   → Perulangan (looping) membuat kode lebih efisien, lebih pendek, 
+     dan lebih mudah dibaca serta diubah. 
+     Kalau tanpa perulangan, kita harus menulis perintah yang sama berkali-kali secara manual.
+-->
+
+<body>
+  <h2>LKPD-3</h2>
+
+  <script>
+    // Penjumlahan 1-10
+    let total = 0;
+    for (let i = 1; i <= 10; i++) {
+      total = total + i;
+    }
+    alert("Hasil penjumlahan angka 1 sampai 10 adalah " + total);
+
+    // Pengulangan Bilangan Genap
+    for (let i = 2; i <= 20; i += 2) {
+      document.write(i + "<br>");
+    }
+  </script>
+</body>
+</html>

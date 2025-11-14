@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+   <script>
+  let namaSiswa = ["Dehan", "Denis", "Dzakir", "Fadil", "Nazwar"];
+  let nilaiSiswa = [ 80, 90, 75, 67, 69];
+  let total = 0;
+  for (let i = 0; i < nilaiSiswa.length; i++) {
+    total += nilaiSiswa[i];
+  }
+  let rata = total / nilaiSiswa.length;
+  console.log("rata rata murid " + rata);
+  for (let i=0; i < namaSiswa.length; i++) {
+    console.log("Array ke- " + (i+1) + ": " + namaSiswa[i]);
+    alert(namaSiswa[i]);
+  }
+
+  /* 
+     Refleksi Singkat:
+     - Array lebih untung karena data banyak bisa disimpan dalam satu tempat.
+     - Dengan array kita bisa memakai loop agar tidak mengulang kode.
+     - Menambah data ke array cukup pakai:
+           namaSiswa.push("Nama Baru");
+  */
+
+  </script>
+</body>
+</html>

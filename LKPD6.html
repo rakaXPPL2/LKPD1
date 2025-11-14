@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <p id="text"> PERCOBAAN TUGAS LKPD5</p>
+  <button onclick= "ubahWarna()">ubah warna</button>
+  <hr>
+  <div id = "kotak"></div>
+  <button onclick= "tambahElement()">Tambah Element</button>
+
+  <script>
+  function ubahWarna(){
+    document.getElementById("text").style.color="cyan";
+  }
+
+  function tambahElement(){
+    let ElementBaru = document.createElement("p");
+    ElementBaru.innerHTML= "PERTAMBAHAN ELEMENT";
+    document.getElementById("kotak").appendChild(ElementBaru);
+  }
+
+  /*
+  ===========================
+          REFLEKSI
+  ===========================
+
+  1. Fungsi document.getElementById
+     - Digunakan untuk mengambil elemen HTML berdasarkan id.
+     - Pada program ini, saya memakainya untuk mengubah warna teks
+       dengan mengakses elemen <p id="text">.
+
+  2. Menambah Elemen Baru ke Halaman
+     - Saya membuat elemen baru memakai document.createElement("p").
+     - Lalu memberikan teks menggunakan innerHTML.
+     - Elemen tersebut dimasukkan ke halaman dengan appendChild().
+     - Hasilnya setiap tombol ditekan, muncul paragraf baru.
+  */
+  </script>
+</body>
+</html>

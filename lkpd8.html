@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <!-- 
+      Mengapa validasi penting sebelum data dikirim ke server?
+      - Agar data yang masuk ke server benar, lengkap, dan aman.
+      - Mengurangi error, mencegah data palsu, serta mencegah input berbahaya.
+
+      Apa risiko jika tidak melakukan validasi?
+      - Server dapat menerima data salah/kosong.
+      - Potensi akun palsu atau spam.
+      - Risiko serangan seperti SQL Injection.
+      - Sistem bisa rusak karena input yang tidak sesuai.
+    -->
+
+    <h3>Form Pendaftaran Sederhana</h3>
+    <input type="text" id="nama" placeholder="Nama lengkap"><br><br>
+    <input type="email" id="email" placeholder="Email"><br><br>
+    <input type="password" id="password" placeholder="Kata sandi"><br><br>
+
+    <button onclick="validasi()">Daftar</button>
+    <p id="feedback"></p>
+
+    <script>
+      function validasi() {
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById("password").value;
+        if (nama === "" || email === "" || pass === "") {
+          feedback.innerHTML="Semua kolom wajib diisi!";
+        } else if (pass.length < 8) {
+          feedback.innerHTML="Password harus minimal 8 karakter!";
+          feedback.style.color="red";
+        } else if (!email.includes("@")) {
+          feedback.innerHTML="Email tidak valid!";
+          feedback.style.color="red";
+        } else  {
+          feedback.innerHTML="Pendaftaran berhasil!";
+          feedback.style.color="red";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -6,16 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <!-- 
+    Mengapa fungsi membuat kode lebih efisien?
+    - Menghindari penulisan ulang kode yang sama (DRY)
+    - Kode lebih rapi, mudah dibaca, dan mudah diperbaiki
+    - Memudahkan reuse kode di bagian lain program
+
+    Apa perbedaan antara parameter dan return?
+    - Parameter adalah input yang diterima fungsi
+    - Return adalah output yang dikembalikan fungsi
+    -->
+
     <script>
-            function hitungLuas(sisi){
-                return sisi * sisi;
-            }
-            function sapa(){
-                let nama = prompt("Siapa NamaMu");
-                alert ("Selamat siang " + nama);
-            }
-            sapa();
+        function hitungLuas(sisi){
+            return sisi * sisi;
+        }
+
+        function sapa(){
+            let nama = prompt("Siapa NamaMu");
+            alert("Selamat siang " + nama);
+        }
+
+        sapa();
     </script>
+
 </body>
 </html>
